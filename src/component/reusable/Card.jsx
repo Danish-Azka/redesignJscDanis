@@ -15,18 +15,15 @@ export default function Card({ label, image, text, type = "default" }) {
 
   return (
     <div className={`h-[450px] ${cardBg} rounded-lg shadow-sm py-5 px-4`}>
-      <div className="w-full h-full flex flex-col justify-center items-center gap-1">
-        
-        {/* Label */}
-        <div className={`Label inline-flex items-center ${labelBg} ${teksLabel} font-semibold px-5 py-1 text-xl relative rounded-l-lg`}>
+      <div className="w-full h-full flex flex-col justify-center items-center gap-2">
+        <div className={`Label w-11/12 inline-flex justify-center items-center ${labelBg} ${teksLabel} font-semibold px-1 py-1 text-[15px] relative rounded-l-lg`}>
           {label}
-
           <div
-            className="absolute right-[-20px] top-0 h-0 w-0 border-b-[36px]  border-l-[20px] border-b-transparent rounded-r-xl"
-            style={{ borderLeftColor: bengkokanLabel}}
-          ></div>
+            className="absolute right-[-20px] top-0 h-0 w-0 border-b-[31px]  border-l-[20px] border-b-transparent rounded-r-xl"
+            style={{ borderLeftColor: bengkokanLabel}}>
+          </div>
         </div>
-        <div className="gambar w-full h-3/5 rounded-l-full overflow-hidden flex justify-center items-center">
+        <div className="gambar w-full overflow-hidden flex justify-center items-center">
           {image}
         </div>
         <div className={`teks w-full font-semibold flex justify-center items-center text-sm h-2/5 text-center ${
